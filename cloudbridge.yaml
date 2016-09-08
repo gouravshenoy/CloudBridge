@@ -4,14 +4,14 @@ cloudbridge:
     clouds:
         aws:
             credentials:
-                aws_access_key: AKIAIEWKWC3GH4Y6ZQMQ
-                aws_secret_key: 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
+                aws_access_key: xxxxx
+                aws_secret_key: xxxxx
                 ec2_region_name: us-east-1
             compute:
                 ec2_keypair_name: cloudbridge_test
                 ec2_secgroup_name: cloudbridge_test
                 ec2_flavor_name: t2.small
-                ec2_image_id: ami-2d39803a
+                ec2_image_id: ami-2d39xxx
 
         jetstream:
             credentials:

@@ -5,13 +5,12 @@ CloudBridge python library to manage virtual machines on amazon ec2 and openstac
 
 Run the following command to install the required python libraries.
 
-    ```cmd
-        pip install -r requirements.txt
-    ```
+    pip install -r requirements.txt
+    
 
 ## Configuration
 
-The ___cloudbridge.yaml__ file contains the EC2/Jetstream configuration information.
+The __cloudbridge.yaml__ file contains the EC2/Jetstream configuration information.
 Please update the _credentials_ section in this file with your EC2 credentials.
 Also update the _compute_ section to set IMAGE, FLAVOR, SECURITY-GROUP, KEYPAIR of your choice.
 
@@ -20,17 +19,16 @@ Also update the _compute_ section to set IMAGE, FLAVOR, SECURITY-GROUP, KEYPAIR 
 
 The __cloudbridge-test.py__ python script is the main file that needs to be run. Below is the usage:
 
-    ```cmd
-        Usage:
-            cloudbridge-test.py instance-create <instance-name> [--cloud=CLOUD]
-            cloudbridge-test.py instance-delete <instance-id> [--cloud=CLOUD]
-            cloudbridge-test.py instance-list [--cloud=CLOUD]
-            cloudbridge-test.py -h
-        Arguments:
-            <instance-name> : name of the virtual machine
-            <instance-id>   : unique identifier of the virtual machine
-        Options:
-            -h,--help       : show this help message
-            --cloud=CLOUD   : target cloud [aws/jetstream]
-    ```
+    
+    Usage:
+        cloudbridge-test.py instance-create <instance-name> [--cloud=CLOUD]
+        cloudbridge-test.py instance-delete <instance-id> [--cloud=CLOUD]
+        cloudbridge-test.py instance-list [--cloud=CLOUD]
+        cloudbridge-test.py -h
+    Arguments:
+        <instance-name> : name of the virtual machine
+        <instance-id>   : unique identifier of the virtual machine
+    Options:
+        -h,--help       : show this help message
+        --cloud=CLOUD   : target cloud [aws/jetstream]
 
